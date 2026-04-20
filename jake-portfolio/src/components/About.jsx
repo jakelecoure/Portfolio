@@ -55,7 +55,7 @@ export default function About() {
           <p className="text-reactor text-sm font-semibold tracking-widest uppercase mb-3">
             01 &nbsp;/&nbsp; About
           </p>
-          <h2 className="font-display font-800 text-3xl md:text-5xl dark:text-white text-gray-900 leading-tight">
+          <h2 className="font-display font-800 dark:text-white text-gray-900" style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', lineHeight: '2', paddingBottom: '0.25rem' }}>
             Engineering student with<br />
             <span className="text-gradient">hands-on offshore</span> experience.
           </h2>
