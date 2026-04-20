@@ -93,7 +93,7 @@ export default function Hero() {
           style={{ transitionDelay: '0.2s' }}
         >
           <span className="dark:text-white text-gray-900">Jake </span>
-          <span className="text-gradient">LeCoure</span>
+          <span className="dark:text-white text-gray-900">LeCoure</span>
         </h1>
 
         {/* Tagline */}
