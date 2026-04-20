@@ -37,11 +37,19 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setStatus('sending')
-    // Simulate async submission — replace with your preferred form API (Formspree, EmailJS, etc.)
-    await new Promise((r) => setTimeout(r, 1400))
+      const res = await fetch('https://formspree.io/f/meevzdlv', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(form),
+  })
+
+  if (res.ok) {
     setStatus('sent')
     setForm({ name: '', email: '', message: '' })
+  } else {
+    setStatus('error')
   }
+}
 
   return (
     <section id="contact" ref={ref} className="py-24 md:py-32 dark:bg-dark-bg bg-white relative overflow-hidden">
