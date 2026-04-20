@@ -71,7 +71,7 @@ export default function Hero() {
         {/* Badge */}
         <div
           className={`
-            inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-8
+            inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-8 mt-16
             border border-reactor/30 bg-reactor/5 text-reactor text-sm font-medium
             transition-all duration-700
             ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}
