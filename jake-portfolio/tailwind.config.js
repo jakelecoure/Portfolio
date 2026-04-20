@@ -31,7 +31,7 @@ export default {
       },
       fontFamily: {
         display: ['Syne', 'sans-serif'],
-        body:    ['DM Sans', 'sans-serif'],
+        body: ['Plus Jakarta Sans', 'sans-serif'],
       },
       animation: {
         'fade-up':     'fadeUp 0.7s ease forwards',
