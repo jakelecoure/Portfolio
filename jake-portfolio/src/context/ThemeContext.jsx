@@ -5,7 +5,7 @@ const ThemeContext = createContext(null)
 export function ThemeProvider({ children }) {
   const [dark, setDark] = useState(() => {
     const saved = localStorage.getItem('jl-theme')
-    return saved ? saved === 'dark' : true // default dark
+    return saved ? saved === 'dark' : false // default dark
   })
 
   useEffect(() => {
