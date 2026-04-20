@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Sun, Moon, Menu, X, Zap } from 'lucide-react'
+import { Sun, Moon, Menu, X } from 'lucide-react'
 import { useTheme } from '../context/ThemeContext'
 
 const NAV_LINKS = [
@@ -66,7 +66,10 @@ export default function Navbar() {
           aria-label="Home"
         >
           <div className="w-8 h-8 rounded-lg bg-reactor/10 border border-reactor/30 flex items-center justify-center group-hover:bg-reactor/20 transition-colors">
-            <Zap size={16} className="text-reactor" />
+            <svg viewBox="0 0 100 100" width="18" height="18">
+              <text x="50" y="76" text-anchor="middle" font-family="Georgia,serif" font-size="64" font-weight="700" fill="#ffffff" letter-spacing="-6">JL</text>
+              <circle cx="83" cy="22" r="7" fill="#00c8ff"/>
+            </svg>
           </div>
           <span className="font-display font-700 text-[15px] dark:text-white text-gray-900 tracking-tight">
             Jake<span className="text-reactor">.</span>
