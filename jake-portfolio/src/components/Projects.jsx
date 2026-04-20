@@ -10,7 +10,7 @@ const PROJECTS = [
     description:
       'Designed and modelled a custom drone-mounted sensor bracket to securely integrate LiDAR and radar systems. Optimized geometry for weight reduction, structural stability, and vibration minimization during flight. Prototype fabricated via 3D printing with iterative testing.',
     tech: ['AutoCAD', 'Onshape', '3D Printing', 'CAD', 'Prototyping'],
-    icon: '🚁',
+    icon: '',
     gradient: 'from-reactor/20 to-blue-900/20',
     accent: '#00c8ff',
     github: 'https://github.com',
@@ -28,7 +28,7 @@ const PROJECTS = [
     description:
       'Designed and built an automated irrigation system using moisture and motion sensors to optimize water usage. Programmed control logic to trigger a servo-actuated valve system based on real-time environmental inputs. Features LCD user interface and audio alert system.',
     tech: ['Arduino', 'C++', 'Sensor Integration', 'Servo Control', 'LCD Interface'],
-    icon: '🌱',
+    icon: '',
     gradient: 'from-green-900/20 to-teal-900/20',
     accent: '#34d399',
     github: 'https://github.com',
@@ -46,12 +46,12 @@ const PROJECTS = [
     description:
       'Led the marketing display for a remotely operated underwater vehicle (ROV) at MATE\'s national competition. The project combined mechanical design, embedded systems, and team coordination to build a functional subsea robot.',
     tech: ['ROV Design', 'Team Leadership', 'CAD', 'Systems Integration'],
-    icon: '🤖',
+    icon: '',
     gradient: 'from-purple-900/20 to-reactor/10',
     accent: '#a78bfa',
     github: null,
     demo: null,
-    badge: '🥇 1st Place — Marketing Display',
+    badge: '1st Place — Marketing Display',
     highlights: [
       'National 1st place — marketing',
       'Subsea robot systems integration',
