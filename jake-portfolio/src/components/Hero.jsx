@@ -106,7 +106,7 @@ export default function Hero() {
           `}
           style={{ transitionDelay: '0.35s' }}
         >
-          Process Engineering Student &nbsp;·&nbsp; CAD Designer &nbsp;·&nbsp; Varsity Athlete
+          Process Engineering Student &nbsp;·&nbsp; Varsity Athlete
         </p>
 
         {/* Bio */}
