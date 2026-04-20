@@ -99,12 +99,16 @@ export default function Hero() {
         {/* Tagline */}
         <p
           className={`
-            font-display text-lg sm:text-xl md:text-2xl font-500
-            dark:text-[#8892b0] text-gray-500 mb-4 leading-loose overflow visible
+            dark:text-[#8892b0] text-gray-500 mb-4
             transition-all duration-700
             ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
           `}
-          style={{ transitionDelay: '0.35s' }}
+          style={{ 
+            transitionDelay: '0.35s',
+            fontSize: 'clamp(1.1rem, 2.5vw, 1.5rem)',
+            lineHeight: '2.5',
+            paddingBottom: '0.25rem',
+          }}
         >
           Process Engineering Student &nbsp;·&nbsp; Varsity Athlete
         </p>
@@ -117,7 +121,11 @@ export default function Hero() {
             transition-all duration-700
             ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
           `}
-          style={{ transitionDelay: '0.5s' }}
+          style={{ 
+            transitionDelay: '0.5s',
+            lineHeight: '2.2',
+            paddingBottom: '0.25rem',
+          }}
         >
           2nd-year Co-op student at Memorial University of Newfoundland, currently gaining real-world
           experience at DOF Subsea in offshore engineering operations, CAD design, and subsea systems.
