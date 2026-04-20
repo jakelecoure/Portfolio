@@ -11,15 +11,15 @@ const SKILLS = {
 }
 
 const CERTS = [
-  { label: 'National Lifeguard',         icon: '🏊' },
-  { label: 'Standard First Aid & AED',   icon: '🩺' },
-  { label: 'WHMIS',                      icon: '⚗️'  },
-  { label: "Valid Driver's License",     icon: '🚗' },
+  { label: 'National Lifeguard',         icon: '' },
+  { label: 'Standard First Aid & AED',   icon: '' },
+  { label: 'WHMIS',                      icon: ''  },
+  { label: "Valid Driver's License",     icon: '' },
 ]
 
 const INTERESTS = [
-  '🏊 Swimming', '⛳ Golfing', '✈️ Travelling',
-  '🥾 Hiking', '🏃 Running', '🏂 Snowboarding', '🏀 Basketball',
+  ' Swimming', ' Golfing', ' Travelling',
+  ' Hiking', ' Running', ' Snowboarding', ' Basketball',
 ]
 
 /* ── Skill badge ── */
