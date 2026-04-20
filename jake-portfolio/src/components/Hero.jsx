@@ -100,7 +100,7 @@ export default function Hero() {
         <p
           className={`
             font-display text-lg sm:text-xl md:text-2xl font-500
-            dark:text-[#8892b0] text-gray-500 mb-4 leading-loose
+            dark:text-[#8892b0] text-gray-500 mb-4 leading-loose overflow visible
             transition-all duration-700
             ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
           `}
