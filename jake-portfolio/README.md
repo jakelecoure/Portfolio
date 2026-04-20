@@ -2,21 +2,21 @@
 
 A sleek, production-ready personal portfolio built with **React + Vite + Tailwind CSS**.
 
-## ✨ Features
+##  Features
 
-- ⚡ Dark/light mode toggle with localStorage persistence
-- 🎨 Custom reactor-blue color scheme (dark mode first)
-- 🖋️ Syne (display) + DM Sans (body) typography pairing
-- 🎞️ Scroll-triggered reveal animations via IntersectionObserver
-- 📱 Fully responsive (mobile-first)
-- 🔍 SEO meta tags + Open Graph
-- 🧩 Reusable component architecture
-- 📜 Sticky blur navbar with active section tracking
-- 🌐 Contact form (ready to wire to Formspree / EmailJS)
+-  Dark/light mode toggle with localStorage persistence
+-  Custom reactor-blue color scheme (dark mode first)
+-  Syne (display) + DM Sans (body) typography pairing
+-  Scroll-triggered reveal animations via IntersectionObserver
+-  Fully responsive (mobile-first)
+-  SEO meta tags + Open Graph
+-  Reusable component architecture
+-  Sticky blur navbar with active section tracking
+-  Contact form (ready to wire to Formspree / EmailJS)
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Node.js **18+**
@@ -44,7 +44,7 @@ npm run preview
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 jake-portfolio/
@@ -73,7 +73,7 @@ jake-portfolio/
 
 ---
 
-## 🔧 Customisation
+##  Customisation
 
 ### Update content
 All copy lives directly in each component as JS arrays — easy to find and update:
@@ -120,7 +120,7 @@ reactor: {
 
 ---
 
-## 🚢 Deployment
+##  Deployment
 
 ### Vercel (recommended — free)
 ```bash
@@ -143,6 +143,6 @@ npm run build
 
 ---
 
-## 📬 Contact
+##  Contact
 
 Jake LeCoure — [jplecoure@mun.ca](mailto:jplecoure@mun.ca) — [LinkedIn](https://www.linkedin.com/in/jake-lecoure)
