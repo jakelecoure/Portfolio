@@ -56,8 +56,8 @@ export default function About() {
             01 &nbsp;/&nbsp; About
           </p>
           <h2 className="font-display font-800 text-3xl md:text-5xl dark:text-white text-gray-900 leading-tight">
-            Engineer by training,<br />
-            <span className="text-gradient">problem-solver</span> by nature.
+            Engineering student with<br />
+            <span className="text-gradient">hands-on offshore</span> experience.
           </h2>
         </div>
 
