@@ -56,7 +56,7 @@ export default function Navbar() {
           : 'bg-transparent border-b border-transparent'}
       `}
     >
-      <div className="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between relative">
 
         {/* Logo */}
         <a
@@ -77,7 +77,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-1" aria-label="Main navigation">
+        <nav className="hidden md:flex items-center gap-1 absolute left-1/2 -translate-x-1/2" aria-label="Main navigation">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
