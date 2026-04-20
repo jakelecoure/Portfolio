@@ -100,7 +100,7 @@ export default function Hero() {
         <p
           className={`
             font-display text-lg sm:text-xl md:text-2xl font-500
-            dark:text-[#8892b0] text-gray-500 mb-4
+            dark:text-[#8892b0] text-gray-500 mb-4 leading-loose
             transition-all duration-700
             ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
           `}
@@ -112,7 +112,7 @@ export default function Hero() {
         {/* Bio */}
         <p
           className={`
-            max-w-2xl mx-auto text-base md:text-lg leading-relaxed mb-10
+            max-w-2xl mx-auto text-base md:text-lg leading-loose mb-10
             dark:text-[#6b7280] text-gray-400
             transition-all duration-700
             ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
