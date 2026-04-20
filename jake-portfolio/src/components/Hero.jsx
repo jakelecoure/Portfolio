@@ -31,7 +31,7 @@ export default function Hero() {
     <section
       id="hero"
       ref={heroRef}
-      className="relative min-h-screen flex flex-col items-center justify-center hero-bg dark:hero-bg bg-gray-50"
+      className="relative min-h-screen flex flex-col items-center overflow-visible justify-center hero-bg dark:hero-bg bg-gray-50"
     >
       {/* ── Background grid dots ── */}
       <div className="absolute inset-0 grid-bg opacity-30" />
