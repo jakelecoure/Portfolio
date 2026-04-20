@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { ArrowRight, Github, Linkedin, Mail, ChevronDown } from 'lucide-react'
+import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react'
 
 /* Floating particle component */
 function Particle({ style }) {
@@ -217,23 +217,7 @@ export default function Hero() {
           ))}
         </div>
       </div>
-
-      {/* ── Scroll indicator ── */}
-      <button
-        onClick={() => scrollTo('about')}
-        aria-label="Scroll down"
-        className="
-          absolute bottom-8 left-1/2 -translate-x-1/2
-          flex flex-col items-center gap-1.5
-          dark:text-[#3a3a5c] text-gray-300
-          hover:text-reactor transition-colors duration-200
-          animate-float
-        "
-        style={{ animationDuration: '3s' }}
-      >
-        <span className="text-xs tracking-widest uppercase font-medium opacity-60">Scroll</span>
-        <ChevronDown size={18} />
-      </button>
+      
     </section>
   )
 }
