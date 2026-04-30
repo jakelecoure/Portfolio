@@ -71,7 +71,7 @@ export default function Contact() {
             04 &nbsp;/&nbsp; Contact
           </p>
           <h2 className="font-display font-800 text-3xl md:text-5xl dark:text-white text-gray-900 leading-tight mb-4">
-            Let's <span className="text-gradient">connect</span>.
+            Let's <span className="dark:text-white text-gray-900">connect</span>.
           </h2>
           <p className="dark:text-[#6b7280] text-gray-500 max-w-xl mx-auto text-base">
             Whether you have a co-op opportunity, want to collaborate on a project,
