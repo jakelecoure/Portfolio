@@ -46,6 +46,10 @@ body {
   background-size: 200px 200px;
 }
 
+.font-display {
+  font-family: 'Inter', sans-serif !important;
+}
+
 /* ─── Hero radial gradient bg ───────────────────────────── */
 .hero-bg {
   background:
