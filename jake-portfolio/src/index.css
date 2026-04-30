@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ─── Custom Properties ────────────────────────────────── */
-:root {
-  --reactor:      #00c8ff;
-  --reactor-glow: rgba(0, 200, 255, 0.35);
-  --reactor-faint:rgba(0, 200, 255, 0.06);
-}
-
 /* ─── Base ──────────────────────────────────────────────── */
 html {
   scroll-behavior: smooth;
@@ -24,58 +17,33 @@ body {
 
 /* ─── Scrollbar ─────────────────────────────────────────── */
 ::-webkit-scrollbar        { width: 6px; }
-::-webkit-scrollbar-track  { background: #06060f; }
-::-webkit-scrollbar-thumb  { background: #1a1a2e; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #00c8ff; }
+::-webkit-scrollbar-track  { background: #0a0a0a; }
+::-webkit-scrollbar-thumb  { background: #222; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #444; }
 
 /* ─── Selection ─────────────────────────────────────────── */
 ::selection {
-  background: rgba(0, 200, 255, 0.25);
+  background: rgba(255,255,255,0.15);
   color: #fff;
 }
 
-/* ─── Noise texture overlay ─────────────────────────────── */
-.noise-overlay {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.025;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 200px 200px;
-}
-
-.font-display {
-  font-family: 'Inter', sans-serif !important;
-}
-
-/* ─── Hero radial gradient bg ───────────────────────────── */
+/* ─── Hero bg ───────────────────────────────────────────── */
 .hero-bg {
-  background:
-    radial-gradient(ellipse 80% 60% at 60% 40%, rgba(0, 200, 255, 0.07) 0%, transparent 70%),
-    radial-gradient(ellipse 50% 50% at 10% 80%, rgba(0, 80, 140, 0.15) 0%, transparent 60%),
-    #06060f;
+  background: #0a0a0a;
 }
 
 html:not(.dark) .hero-bg {
-  background:
-    radial-gradient(ellipse 80% 60% at 60% 40%, rgba(0, 150, 200, 0.05) 0%, transparent 70%),
-    #f4f6fb;
+  background: #ffffff;
 }
 
 /* ─── Grid dot pattern ──────────────────────────────────── */
 .grid-bg {
-  background-image:
-    radial-gradient(circle, rgba(0,200,255,0.12) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
-/* ─── Reactor glow orb ──────────────────────────────────── */
-.glow-orb {
-  border-radius: 50%;
-  filter: blur(80px);
-  pointer-events: none;
+html:not(.dark) .grid-bg {
+  background-image: radial-gradient(circle, rgba(0,0,0,0.05) 1px, transparent 1px);
 }
 
 /* ─── Animated underline ────────────────────────────────── */
@@ -88,22 +56,28 @@ html:not(.dark) .hero-bg {
   bottom: -2px;
   left: 0;
   width: 0;
-  height: 2px;
-  background: var(--reactor);
+  height: 1px;
+  background: currentColor;
   transition: width 0.3s ease;
 }
 .animated-underline:hover::after {
   width: 100%;
 }
 
-/* ─── Reactor border glow ───────────────────────────────── */
-.reactor-border {
-  border: 1px solid rgba(0, 200, 255, 0.2);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+/* ─── Card border ───────────────────────────────────────── */
+.mono-border {
+  border: 1px solid #1e1e1e;
+  transition: border-color 0.3s ease;
 }
-.reactor-border:hover {
-  border-color: rgba(0, 200, 255, 0.5);
-  box-shadow: 0 0 20px rgba(0, 200, 255, 0.15);
+.mono-border:hover {
+  border-color: #333;
+}
+
+html:not(.dark) .mono-border {
+  border: 1px solid #e5e5e5;
+}
+html:not(.dark) .mono-border:hover {
+  border-color: #aaa;
 }
 
 /* ─── Skill badge ───────────────────────────────────────── */
@@ -115,100 +89,4 @@ html:not(.dark) .hero-bg {
   border-radius: 9999px;
   font-size: 0.8125rem;
   font-weight: 500;
-  letter-spacing: 0.01em;
-  border: 1px solid rgba(0, 200, 255, 0.2);
-  background: rgba(0, 200, 255, 0.05);
-  color: #a0e8f8;
-  transition: all 0.2s ease;
-}
-.skill-badge:hover {
-  background: rgba(0, 200, 255, 0.12);
-  border-color: rgba(0, 200, 255, 0.45);
-  transform: translateY(-1px);
-}
-
-/* ─── Timeline connector ────────────────────────────────── */
-.timeline-line {
-  position: absolute;
-  left: 1.125rem;
-  top: 2.5rem;
-  bottom: 0;
-  width: 1px;
-  background: linear-gradient(to bottom, rgba(0,200,255,0.4), rgba(0,200,255,0.05));
-}
-
-/* ─── Project card hover ────────────────────────────────── */
-.project-card {
-  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-              box-shadow 0.35s ease;
-}
-.project-card:hover {
-  transform: translateY(-6px);
-}
-
-/* ─── Gradient text ─────────────────────────────────────── */
-.text-gradient {
-  background: linear-gradient(135deg, #00c8ff 0%, #00e5ff 50%, #7dd3fc 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* ─── Section fade-in animation (JS-toggled) ────────────── */
-.reveal {
-  opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-.reveal-delay-1 { transition-delay: 0.1s; }
-.reveal-delay-2 { transition-delay: 0.2s; }
-.reveal-delay-3 { transition-delay: 0.3s; }
-.reveal-delay-4 { transition-delay: 0.4s; }
-.reveal-delay-5 { transition-delay: 0.5s; }
-
-/* ─── Input focus ───────────────────────────────────────── */
-.reactor-input {
-  background: rgba(0, 200, 255, 0.03);
-  border: 1px solid rgba(0, 200, 255, 0.15);
-  border-radius: 0.5rem;
-  color: #e8e8f0;
-  outline: none;
-  transition: border-color 0.25s ease, box-shadow 0.25s ease;
-  width: 100%;
-  padding: 0.75rem 1rem;
-}
-.reactor-input:focus {
-  border-color: rgba(0, 200, 255, 0.5);
-  box-shadow: 0 0 0 3px rgba(0, 200, 255, 0.08);
-}
-.reactor-input::placeholder {
-  color: rgba(232, 232, 240, 0.3);
-}
-
-/* ─── Light mode overrides ──────────────────────────────── */
-html:not(.dark) .reactor-input {
-  background: #ffffff;
-  border-color: #e2e8f0;
-  color: #1a202c;
-}
-html:not(.dark) .reactor-input:focus {
-  border-color: rgba(0, 150, 200, 0.6);
-  box-shadow: 0 0 0 3px rgba(0, 150, 200, 0.1);
-}
-html:not(.dark) .reactor-input::placeholder {
-  color: #a0aec0;
-}
-html:not(.dark) .skill-badge {
-  background: rgba(0, 150, 200, 0.08);
-  border-color: rgba(0, 150, 200, 0.25);
-  color: #0369a1;
-}
-
-.font-display {
-  line-height: 1.8 !important;
-  padding-bottom: 0.15em;
-}
+  letter-sp
