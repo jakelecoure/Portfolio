@@ -89,4 +89,89 @@ html:not(.dark) .mono-border:hover {
   border-radius: 9999px;
   font-size: 0.8125rem;
   font-weight: 500;
-  letter-sp
+  letter-spacing: 0.01em;
+  border: 1px solid #2a2a2a;
+  background: #111;
+  color: #888;
+  transition: all 0.2s ease;
+}
+.skill-badge:hover {
+  border-color: #444;
+  color: #ccc;
+  transform: translateY(-1px);
+}
+
+html:not(.dark) .skill-badge {
+  border-color: #ddd;
+  background: #f5f5f5;
+  color: #555;
+}
+html:not(.dark) .skill-badge:hover {
+  border-color: #999;
+  color: #222;
+}
+
+/* ─── Timeline connector ────────────────────────────────── */
+.timeline-line {
+  position: absolute;
+  left: 1.125rem;
+  top: 2.5rem;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, #333, #1a1a1a);
+}
+
+/* ─── Project card hover ────────────────────────────────── */
+.project-card {
+  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              box-shadow 0.35s ease;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ─── Section fade-in ───────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
+
+/* ─── Input ─────────────────────────────────────────────── */
+.mono-input {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 0.5rem;
+  color: #e5e5e5;
+  outline: none;
+  transition: border-color 0.25s ease;
+  width: 100%;
+  padding: 0.75rem 1rem;
+}
+.mono-input:focus {
+  border-color: #555;
+}
+.mono-input::placeholder {
+  color: #444;
+}
+
+html:not(.dark) .mono-input {
+  background: #fff;
+  border-color: #ddd;
+  color: #111;
+}
+html:not(.dark) .mono-input:focus {
+  border-color: #888;
+}
+html:not(.dark) .mono-input::placeholder {
+  color: #aaa;
+}
