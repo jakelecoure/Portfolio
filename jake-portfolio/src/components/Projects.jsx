@@ -206,7 +206,7 @@ export default function Projects() {
           </p>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
             <h2 className="font-display font-800 text-3xl md:text-5xl dark:text-white text-gray-900 leading-tight">
-              What I've <span className="text-gradient">built</span>.
+              What I've <span className="dark:text-white text-gray-900">built</span>.
             </h2>
             <p className="dark:text-[#6b7280] text-gray-500 text-sm max-w-sm md:text-right">
               A mix of CAD design, embedded systems, and competition engineering.
