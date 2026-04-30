@@ -8,38 +8,29 @@ export default {
   theme: {
     extend: {
       colors: {
-        reactor: {
-          DEFAULT: '#00c8ff',
-          dim:     '#0096cc',
-          glow:    '#00e5ff',
-          faint:   'rgba(0,200,255,0.08)',
-        },
         dark: {
-          bg:      '#06060f',
-          surface: '#0b0b17',
-          card:    '#0f0f1c',
-          border:  '#181828',
-          hover:   '#1a1a2e',
+          bg:      '#0a0a0a',
+          surface: '#0d0d0d',
+          card:    '#111111',
+          border:  '#1e1e1e',
+          hover:   '#1a1a1a',
         },
         light: {
-          bg:      '#f4f6fb',
-          surface: '#ffffff',
-          card:    '#f9fafb',
-          border:  '#e2e8f0',
-          hover:   '#edf2f7',
+          bg:      '#ffffff',
+          surface: '#f9f9f9',
+          card:    '#f3f3f3',
+          border:  '#e5e5e5',
+          hover:   '#eeeeee',
         },
       },
       fontFamily: {
         display: ['Inter', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
+        body:    ['Inter', 'sans-serif'],
       },
       animation: {
-        'fade-up':     'fadeUp 0.7s ease forwards',
-        'fade-in':     'fadeIn 0.6s ease forwards',
-        'glow-pulse':  'glowPulse 3s ease-in-out infinite',
-        'float':       'float 8s ease-in-out infinite',
-        'line-grow':   'lineGrow 1s ease forwards',
-        'slide-right': 'slideRight 0.6s ease forwards',
+        'fade-up':    'fadeUp 0.7s ease forwards',
+        'fade-in':    'fadeIn 0.6s ease forwards',
+        'float':      'float 8s ease-in-out infinite',
       },
       keyframes: {
         fadeUp: {
@@ -50,28 +41,14 @@ export default {
           '0%':   { opacity: '0' },
           '100%': { opacity: '1' },
         },
-        glowPulse: {
-          '0%, 100%': { opacity: '0.5', transform: 'scale(1)' },
-          '50%':      { opacity: '1',   transform: 'scale(1.05)' },
-        },
         float: {
           '0%, 100%': { transform: 'translateY(0px)'   },
           '50%':      { transform: 'translateY(-18px)' },
         },
-        lineGrow: {
-          '0%':   { width: '0%'    },
-          '100%': { width: '100%'  },
-        },
-        slideRight: {
-          '0%':   { opacity: '0', transform: 'translateX(-20px)' },
-          '100%': { opacity: '1', transform: 'translateX(0)'     },
-        },
       },
       boxShadow: {
-        'reactor':     '0 0 30px rgba(0,200,255,0.25)',
-        'reactor-lg':  '0 0 60px rgba(0,200,255,0.35)',
-        'card-dark':   '0 4px 24px rgba(0,0,0,0.5)',
-        'card-light':  '0 4px 24px rgba(0,0,0,0.08)',
+        'card-dark':  '0 4px 24px rgba(0,0,0,0.5)',
+        'card-light': '0 4px 24px rgba(0,0,0,0.06)',
       },
     },
   },
