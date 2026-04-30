@@ -152,7 +152,7 @@ export default function Experience() {
             03 &nbsp;/&nbsp; Experience
           </p>
           <h2 className="font-display font-800 text-3xl md:text-5xl dark:text-white text-gray-900 leading-tight">
-            Where I've <span className="text-gradient">worked & learned</span>.
+            Where I've <span className="dark:text-white text-gray-900">worked & learned</span>.
           </h2>
         </div>
 
