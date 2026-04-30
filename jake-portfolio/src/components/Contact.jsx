@@ -49,6 +49,14 @@ export default function Contact() {
     }
   }
 
+  const openLink = (href) => {
+    if (href.startsWith('mailto')) {
+      window.location.href = href
+    } else {
+      window.open(href, '_blank', 'noopener,noreferrer')
+    }
+  }
+
   return (
     <section id="contact" ref={ref} className="py-24 md:py-32 dark:bg-[#0a0a0a] bg-white">
       <div className="relative max-w-6xl mx-auto px-6">
@@ -71,7 +79,6 @@ export default function Contact() {
 
         <div className="grid md:grid-cols-[1fr_400px] gap-12 lg:gap-16">
 
-          {/* Form */}
           <div className="reveal reveal-delay-1">
             <div className="p-6 md:p-8 rounded-2xl dark:bg-[#111] bg-gray-50 dark:border border dark:border-[#1e1e1e] border-gray-200">
               {status === 'sent' ? (
@@ -168,13 +175,12 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Info + Socials */}
           <div className="reveal reveal-delay-2 flex flex-col gap-6">
 
             {[
-              { icon: <MapPin size={16} />, label: 'Location', value: "St. John's, NL, Canada" },
-              { icon: <Mail size={16} />,   label: 'Email',    value: 'jplecoure@mun.ca',      href: 'mailto:jplecoure@mun.ca' },
-              { icon: <Phone size={16} />,  label: 'Phone',    value: '(709) 424-1566',         href: 'tel:7094241566' },
+              { icon: <MapPin size={16} />, label: 'Location', value: "St. John's, NL, Canada", href: null },
+              { icon: <Mail size={16} />,   label: 'Email',    value: 'jplecoure@mun.ca',       href: 'mailto:jplecoure@mun.ca' },
+              { icon: <Phone size={16} />,  label: 'Phone',    value: '(709) 424-1566',          href: 'tel:7094241566' },
             ].map((info) => (
               <div
                 key={info.label}
@@ -186,9 +192,12 @@ export default function Contact() {
                 <div>
                   <p className="text-xs dark:text-[#444] text-gray-400 mb-0.5">{info.label}</p>
                   {info.href ? (
-                    <a href={info.href} className="text-sm font-medium dark:text-[#aaa] text-gray-700 hover:dark:text-white hover:text-gray-900 transition-colors">
+                    <button
+                      onClick={() => openLink(info.href)}
+                      className="text-sm font-medium dark:text-[#aaa] text-gray-700 hover:dark:text-white hover:text-gray-900 transition-colors"
+                    >
                       {info.value}
-                    </a>
+                    </button>
                   ) : (
                     <p className="text-sm font-medium dark:text-[#aaa] text-gray-700">{info.value}</p>
                   )}
@@ -204,13 +213,11 @@ export default function Contact() {
               </h3>
               <div className="space-y-3">
                 {SOCIALS.map((s) => (
-                  
+                  <div
                     key={s.label}
-                    href={s.href}
-                    target={s.href.startsWith('http') ? '_blank' : undefined}
-                    rel="noopener noreferrer"
+                    onClick={() => openLink(s.href)}
                     className="
-                      flex items-center gap-3 p-3.5 rounded-xl group
+                      flex items-center gap-3 p-3.5 rounded-xl group cursor-pointer
                       dark:bg-[#111] bg-gray-50
                       dark:border border dark:border-[#1e1e1e] border-gray-200
                       hover:dark:border-[#333] hover:border-gray-400
@@ -226,7 +233,7 @@ export default function Contact() {
                         {s.handle}
                       </p>
                     </div>
-                  </a>
+                  </div>
                 ))}
               </div>
             </div>
