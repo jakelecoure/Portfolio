@@ -144,9 +144,9 @@ export default function Hero() {
           style={{ transitionDelay: '0.8s' }}
         >
           {[
-            { icon: <Github size={18} />,   href: 'https://github.com',                        label: 'GitHub'   },
-            { icon: <Linkedin size={18} />, href: 'https://www.linkedin.com/in/jake-lecoure',  label: 'LinkedIn' },
-            { icon: <Mail size={18} />,     href: 'mailto:jplecoure@mun.ca',                   label: 'Email'    },
+            { icon: <Github size={18} />,   href: 'https://github.com',                       label: 'GitHub'   },
+            { icon: <Linkedin size={18} />, href: 'https://www.linkedin.com/in/jake-lecoure', label: 'LinkedIn' },
+            { icon: <Mail size={18} />,     href: 'mailto:jplecoure@mun.ca',                  label: 'Email'    },
           ].map((s) => (
             
               key={s.label}
