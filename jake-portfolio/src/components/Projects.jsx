@@ -28,7 +28,7 @@ const PROJECTS = [
     tech: ['Arduino', 'Python', 'Sensor Integration', 'Servo Control', 'LCD Interface'],
     icon: null,
     image: '/projects/irrigation.jpg',
-    github: 'https://github.com',
+    github: 'https://github.com/jakelecoure/smart_irrigation_system',
     demo: null,
     highlights: [
       'Real-time moisture sensing',
