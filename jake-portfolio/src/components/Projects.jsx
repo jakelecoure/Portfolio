@@ -10,7 +10,7 @@ const PROJECTS = [
       'Designed and modelled a custom drone-mounted sensor bracket to securely integrate LiDAR and radar systems. Optimized geometry for weight reduction, structural stability, and vibration minimization during flight. Prototype fabricated via 3D printing with iterative testing.',
     tech: ['AutoCAD', 'Onshape', '3D Printing', 'CAD', 'Prototyping'],
     icon: null,
-    image: '/projects/drone-mount.jpg',
+    image: '/projects/drone-mount.png',
     github: null,
     demo: null,
     highlights: [
