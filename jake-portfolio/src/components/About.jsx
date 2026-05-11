@@ -78,9 +78,7 @@ export default function About() {
                 exposure to real-world engineering in high-stakes environments.
               </p>
               <p>
-                Outside the office, I'm a varsity swimmer and{' '}
-                6× provincial record holder{' '}
-                a pursuit that has shaped my discipline, resilience, and ability to perform under pressure.
+                Outside the office, I'm a varsity swimmer and 6× provincial record holder, a pursuit that has shaped my discipline, resilience, and ability to perform under pressure.
               </p>
             </div>
 
