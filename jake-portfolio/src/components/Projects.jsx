@@ -44,9 +44,9 @@ const PROJECTS = [
     icon: null,
     github: null,
     demo: null,
-    badge: '1st Place — Marketing Display',
+    badge: '1st Place: Marketing Display',
     highlights: [
-      'National 1st place — marketing',
+      'National 1st place in marketing',
       'Subsea robot systems integration',
       'Cross-functional team coordination',
     ],
@@ -189,7 +189,7 @@ export default function Projects() {
 
         <div className="reveal reveal-delay-4 mt-12 text-center">
           <p className="dark:text-[#333] text-gray-300 text-sm">
-            More projects in progress — check back soon or{' '}
+            More projects in progress, check back soon or{' '}
             <a href="#contact" className="dark:text-[#666] text-gray-500 hover:dark:text-white hover:text-gray-900 underline">reach out</a> to learn more.
           </p>
         </div>

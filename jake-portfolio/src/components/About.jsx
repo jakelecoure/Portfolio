@@ -74,13 +74,13 @@ export default function About() {
               </p>
               <p>
                 My work at DOF spans subsea intervention planning, ROV operations, CAD-based deck layout
-                design, and SIMOPS coordination for international offshore projects — giving me hands-on
+                design, and SIMOPS coordination for international offshore projects, giving me hands-on
                 exposure to real-world engineering in high-stakes environments.
               </p>
               <p>
                 Outside the office, I'm a varsity swimmer and{' '}
                 6× provincial record holder{' '}
-                — a pursuit that's shaped my discipline, resilience, and ability to perform under pressure.
+                a pursuit that has shaped my discipline, resilience, and ability to perform under pressure.
               </p>
             </div>
 

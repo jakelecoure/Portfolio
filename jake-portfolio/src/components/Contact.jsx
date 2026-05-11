@@ -73,7 +73,7 @@ export default function Contact() {
           </h2>
           <p className="dark:text-[#999] text-gray-500 max-w-xl mx-auto text-base">
             Whether you have a co-op opportunity, want to collaborate on a project,
-            or just want to say hello — my inbox is open.
+            or just want to say hello, my inbox is open.
           </p>
         </div>
 

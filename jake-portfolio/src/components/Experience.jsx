@@ -5,7 +5,7 @@ const EXPERIENCE = [
   {
     type: 'work',
     icon: <Briefcase size={16} />,
-    role: 'Engineering Student — Co-op',
+    role: 'Engineering Student (Co-op)',
     org: 'DOF Subsea',
     location: 'St. John\'s, NL',
     period: 'January 2025 – Present',
@@ -37,7 +37,7 @@ const AWARDS = [
   { title: 'Transforming Our Horizons Entrance Scholarship', amount: '$6,000', org: 'Memorial University' },
   { title: 'Swimming NL / Memorial University Bursary',     amount: '$1,500', org: 'Swimming NL'        },
   { title: 'Centenary of Responsible Government Scholarship', amount: '$1,000', org: 'Government of NL' },
-  { title: '1st Place — Marketing Display',                 amount: 'National', org: 'MATE ROV Competition' },
+  { title: '1st Place: Marketing Display',                  amount: 'National', org: 'MATE ROV Competition' },
   { title: 'Excellence Award in Mathematics',               amount: '2022–2024', org: 'Gander Collegiate' },
 ]
 
@@ -54,7 +54,7 @@ const EXTRA = [
     ],
   },
   {
-    title: 'Volunteer — Swim For Hope Fundraiser',
+    title: 'Swim For Hope Fundraiser Volunteer',
     org: 'Dr. H. Bliss Murphy Cancer Centre',
     period: '2015 – Present',
     icon: null,
