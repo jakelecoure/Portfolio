@@ -10,7 +10,8 @@ const PROJECTS = [
       'Designed and modelled a custom drone-mounted sensor bracket to securely integrate LiDAR and radar systems. Optimized geometry for weight reduction, structural stability, and vibration minimization during flight. Prototype fabricated via 3D printing with iterative testing.',
     tech: ['AutoCAD', 'Onshape', '3D Printing', 'CAD', 'Prototyping'],
     icon: null,
-    github: 'https://github.com',
+    image: '/projects/drone-mount.jpg',
+    github: null,
     demo: null,
     highlights: [
       'Weight-optimized geometry',
@@ -24,8 +25,9 @@ const PROJECTS = [
     subtitle: 'Embedded Systems · Arduino',
     description:
       'Designed and built an automated irrigation system using moisture and motion sensors to optimize water usage. Programmed control logic to trigger a servo-actuated valve system based on real-time environmental inputs. Features LCD user interface and audio alert system.',
-    tech: ['Arduino', 'C++', 'Sensor Integration', 'Servo Control', 'LCD Interface'],
+    tech: ['Arduino', 'Python', 'Sensor Integration', 'Servo Control', 'LCD Interface'],
     icon: null,
+    image: '/projects/irrigation.jpg',
     github: 'https://github.com',
     demo: null,
     highlights: [
@@ -42,6 +44,7 @@ const PROJECTS = [
       'Led the marketing display for a remotely operated underwater vehicle at MATE\'s national competition. Combined mechanical design, embedded systems, and team coordination to build a functional subsea robot.',
     tech: ['ROV Design', 'Team Leadership', 'CAD', 'Systems Integration'],
     icon: null,
+    image: '/projects/rov.jpg',
     github: null,
     demo: null,
     badge: '1st Place: Marketing Display',
@@ -76,8 +79,19 @@ function ProjectCard({ project, index }) {
         reveal reveal-delay-${Math.min(index + 1, 5)}
       `}
     >
-      {/* Top bar */}
-      <div className="h-[2px] w-full dark:bg-[#222] bg-gray-200" />
+      {/* Project image */}
+      {project.image && (
+        <div className="w-full h-48 overflow-hidden">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+          />
+        </div>
+      )}
+
+      {/* Top bar (shown only when no image) */}
+      {!project.image && <div className="h-[2px] w-full dark:bg-[#222] bg-gray-200" />}
 
       {/* Header */}
       <div className="p-6 dark:bg-[#111] bg-gray-50">
