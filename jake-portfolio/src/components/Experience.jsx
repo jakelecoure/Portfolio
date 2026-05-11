@@ -45,7 +45,7 @@ const EXTRA = [
   {
     title: 'Varsity Swimmer',
     org: 'Memorial University of Newfoundland',
-    period: '2023 – Present',
+    period: '2024 – Present',
     icon: null,
     bullets: [
       '6× provincial record holder · 2× school record holder',
