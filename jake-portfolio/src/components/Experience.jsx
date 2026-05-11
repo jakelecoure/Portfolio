@@ -24,7 +24,7 @@ const EXPERIENCE = [
     role: 'Bachelor of Engineering & Applied Science',
     org: 'Memorial University of Newfoundland',
     location: 'St. John\'s, NL',
-    period: '2023 – 2029 (Expected)',
+    period: '2024 – 2029 (Expected)',
     detail: 'Co-op Program · Process Engineering · 2nd Year · Class of 2029',
     bullets: [
       'Co-op integrated program with real-world engineering placements each year',
