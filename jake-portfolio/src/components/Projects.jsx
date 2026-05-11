@@ -120,7 +120,7 @@ function ProjectCard({ project, index }) {
 
         <div className="flex items-center gap-3">
           {project.github && (
-            
+            <a
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
@@ -131,7 +131,7 @@ function ProjectCard({ project, index }) {
             </a>
           )}
           {project.demo && (
-            
+            <a
               href={project.demo}
               target="_blank"
               rel="noopener noreferrer"

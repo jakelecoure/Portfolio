@@ -57,7 +57,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between relative">
 
         {/* Logo */}
-        
+        <a
           href="#hero"
           onClick={(e) => handleNav(e, '#hero')}
           className="flex items-center gap-2 group"
@@ -65,8 +65,8 @@ export default function Navbar() {
         >
           <div className="w-8 h-8 rounded-lg dark:bg-[#111] bg-gray-100 dark:border border dark:border-[#222] border-gray-200 flex items-center justify-center">
             <svg viewBox="0 0 100 100" width="18" height="18">
-              <text x="50" y="76" text-anchor="middle" font-family="Georgia,serif" font-size="64" font-weight="700" fill="#00c8ff" letter-spacing="-6">JL</text>
-              <circle cx="83" cy="22" r="7" fill="#00c8ff"/>
+              <text x="50" y="76" textAnchor="middle" fontFamily="Georgia,serif" fontSize="64" fontWeight="700" fill="#888888" letterSpacing="-6">JL</text>
+              <circle cx="83" cy="22" r="7" fill="#888888"/>
             </svg>
           </div>
           <span className="font-display font-700 text-[15px] dark:text-white text-gray-900 tracking-tight">
@@ -77,7 +77,7 @@ export default function Navbar() {
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-1 absolute left-1/2 -translate-x-1/2" aria-label="Main navigation">
           {NAV_LINKS.map((link) => (
-            
+            <a
               key={link.href}
               href={link.href}
               onClick={(e) => handleNav(e, link.href)}
@@ -111,7 +111,7 @@ export default function Navbar() {
             {dark ? <Sun size={16} /> : <Moon size={16} />}
           </button>
 
-          
+          <a
             href="#contact"
             onClick={(e) => handleNav(e, '#contact')}
             className="
@@ -146,7 +146,7 @@ export default function Navbar() {
       >
         <nav className="flex flex-col px-6 gap-1">
           {NAV_LINKS.map((link) => (
-            
+            <a
               key={link.href}
               href={link.href}
               onClick={(e) => handleNav(e, link.href)}
@@ -160,7 +160,7 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          
+          <a
             href="#contact"
             onClick={(e) => handleNav(e, '#contact')}
             className="mt-2 px-4 py-3 rounded-lg text-sm font-medium text-center dark:bg-white bg-gray-900 dark:text-gray-900 text-white"

@@ -148,7 +148,7 @@ export default function Hero() {
             { icon: <Linkedin size={18} />, href: 'https://www.linkedin.com/in/jake-lecoure', label: 'LinkedIn' },
             { icon: <Mail size={18} />,     href: 'mailto:jplecoure@mun.ca',                  label: 'Email'    },
           ].map((s) => (
-            
+            <a
               key={s.label}
               href={s.href}
               target={s.href.startsWith('http') ? '_blank' : undefined}
