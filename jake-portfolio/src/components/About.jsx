@@ -68,9 +68,9 @@ export default function About() {
             <div className="reveal reveal-delay-1 space-y-5 dark:text-[#aaa] text-gray-500 leading-relaxed text-[15px]">
               <p>
                 I'm a 2nd-year Process Engineering student at{' '}
-                <span className="dark:text-white text-gray-900">Memorial University of Newfoundland</span>,
+                Memorial University of Newfoundland,
                 currently on co-op with{' '}
-                <span className="dark:text-white text-gray-900">DOF Subsea</span> in St. John's, NL.
+                DOF Subsea in St. John's, NL.
               </p>
               <p>
                 My work at DOF spans subsea intervention planning, ROV operations, CAD-based deck layout
@@ -79,9 +79,7 @@ export default function About() {
               </p>
               <p>
                 Outside the office, I'm a varsity swimmer and{' '}
-                <span className="dark:text-white text-gray-900">
-                  6× provincial record holder
-                </span>{' '}
+                6× provincial record holder{' '}
                 — a pursuit that's shaped my discipline, resilience, and ability to perform under pressure.
               </p>
             </div>
