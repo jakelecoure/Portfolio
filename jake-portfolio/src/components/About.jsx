@@ -10,10 +10,10 @@ const SKILLS = {
 }
 
 const CERTS = [
-  { label: 'National Lifeguard',       icon: '' },
-  { label: 'Standard First Aid & AED', icon: '' },
-  { label: 'WHMIS',                    icon: ''  },
-  { label: "Valid Driver's License",   icon: '' },
+  { label: 'National Lifeguard'       },
+  { label: 'Standard First Aid & AED' },
+  { label: 'WHMIS'                    },
+  { label: "Valid Driver's License"   },
 ]
 
 const INTERESTS = [
@@ -25,16 +25,15 @@ function Badge({ label }) {
   return <span className="skill-badge">{label}</span>
 }
 
-function CertCard({ icon, label }) {
+function CertCard({ label }) {
   return (
     <div className="
-      flex items-center gap-3 px-4 py-3 rounded-xl
+      flex items-center px-4 py-3 rounded-xl
       dark:bg-[#111] bg-white
       mono-border
       dark:text-[#888] text-gray-600
       text-sm font-medium
     ">
-      <span className="text-xl">{icon}</span>
       {label}
     </div>
   )

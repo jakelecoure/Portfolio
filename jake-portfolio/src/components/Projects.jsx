@@ -9,7 +9,7 @@ const PROJECTS = [
     description:
       'Designed and modelled a custom drone-mounted sensor bracket to securely integrate LiDAR and radar systems. Optimized geometry for weight reduction, structural stability, and vibration minimization during flight. Prototype fabricated via 3D printing with iterative testing.',
     tech: ['AutoCAD', 'Onshape', '3D Printing', 'CAD', 'Prototyping'],
-    icon: '',
+    icon: null,
     github: 'https://github.com',
     demo: null,
     highlights: [
@@ -25,7 +25,7 @@ const PROJECTS = [
     description:
       'Designed and built an automated irrigation system using moisture and motion sensors to optimize water usage. Programmed control logic to trigger a servo-actuated valve system based on real-time environmental inputs. Features LCD user interface and audio alert system.',
     tech: ['Arduino', 'C++', 'Sensor Integration', 'Servo Control', 'LCD Interface'],
-    icon: '🌱',
+    icon: null,
     github: 'https://github.com',
     demo: null,
     highlights: [
@@ -41,7 +41,7 @@ const PROJECTS = [
     description:
       'Led the marketing display for a remotely operated underwater vehicle at MATE\'s national competition. Combined mechanical design, embedded systems, and team coordination to build a functional subsea robot.',
     tech: ['ROV Design', 'Team Leadership', 'CAD', 'Systems Integration'],
-    icon: '',
+    icon: null,
     github: null,
     demo: null,
     badge: '1st Place — Marketing Display',
@@ -82,9 +82,11 @@ function ProjectCard({ project, index }) {
       {/* Header */}
       <div className="p-6 dark:bg-[#111] bg-gray-50">
         <div className="flex items-start justify-between mb-4">
-          <div className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl dark:bg-[#1a1a1a] bg-white dark:border border dark:border-[#222] border-gray-200">
-            {project.icon}
-          </div>
+          {project.icon && (
+            <div className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl dark:bg-[#1a1a1a] bg-white dark:border border dark:border-[#222] border-gray-200">
+              {project.icon}
+            </div>
+          )}
           {project.badge && (
             <span className="text-xs font-semibold px-3 py-1 rounded-full dark:bg-[#1a1a1a] bg-gray-200 dark:text-[#888] text-gray-600 dark:border border dark:border-[#2a2a2a] border-gray-300">
               {project.badge}

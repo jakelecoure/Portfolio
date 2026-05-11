@@ -46,7 +46,7 @@ const EXTRA = [
     title: 'Varsity Swimmer',
     org: 'Memorial University of Newfoundland',
     period: '2023 – Present',
-    icon: '🏊',
+    icon: null,
     bullets: [
       '6× provincial record holder · 2× school record holder',
       'Maintain 20+ hour training weeks alongside full academic schedule',
@@ -57,14 +57,14 @@ const EXTRA = [
     title: 'Volunteer — Swim For Hope Fundraiser',
     org: 'Dr. H. Bliss Murphy Cancer Centre',
     period: '2015 – Present',
-    icon: '❤️',
+    icon: null,
     bullets: ['Annual fundraising swim event supporting cancer research and care in NL'],
   },
   {
     title: 'Volunteer Basketball Coach',
     org: 'Elementary & Jr. High School',
     period: '2022 – 2024',
-    icon: '🏀',
+    icon: null,
     bullets: ['Coached youth basketball, developing leadership and communication skills'],
   },
 ]
@@ -189,7 +189,6 @@ export default function Experience() {
                     className="p-4 rounded-xl dark:bg-[#111] bg-white dark:border border dark:border-[#1e1e1e] border-gray-200"
                   >
                     <div className="flex items-center gap-2 mb-1">
-                      <span className="text-base">{item.icon}</span>
                       <span className="font-display font-600 text-sm dark:text-white text-gray-900">
                         {item.title}
                       </span>
