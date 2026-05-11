@@ -100,7 +100,7 @@ function TimelineEntry({ entry, index, isLast }) {
 
         <ul className="space-y-1.5">
           {entry.bullets.map((b, i) => (
-            <li key={i} className="flex items-start gap-2 text-sm dark:text-[#666] text-gray-500 leading-relaxed">
+            <li key={i} className="flex items-start gap-2 text-sm dark:text-[#aaa] text-gray-500 leading-relaxed">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0 dark:bg-[#333] bg-gray-300" />
               {b}
             </li>

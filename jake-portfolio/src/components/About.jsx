@@ -66,7 +66,7 @@ export default function About() {
 
           {/* Left — Bio */}
           <div>
-            <div className="reveal reveal-delay-1 space-y-5 dark:text-[#666] text-gray-500 leading-relaxed text-[15px]">
+            <div className="reveal reveal-delay-1 space-y-5 dark:text-[#aaa] text-gray-500 leading-relaxed text-[15px]">
               <p>
                 I'm a 2nd-year Process Engineering student at{' '}
                 <span className="dark:text-white text-gray-900 font-medium">Memorial University of Newfoundland</span>,

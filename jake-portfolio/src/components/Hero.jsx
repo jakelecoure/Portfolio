@@ -60,7 +60,7 @@ export default function Hero() {
         {/* Tagline */}
         <p
           className={`
-            dark:text-[#555] text-gray-400 mb-4
+            dark:text-[#999] text-gray-500 mb-4
             transition-all duration-700
             ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
           `}
@@ -77,7 +77,7 @@ export default function Hero() {
         {/* Bio */}
         <p
           className={`
-            max-w-2xl mx-auto dark:text-[#444] text-gray-500
+            max-w-2xl mx-auto dark:text-[#999] text-gray-500
             transition-all duration-700
             ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
           `}

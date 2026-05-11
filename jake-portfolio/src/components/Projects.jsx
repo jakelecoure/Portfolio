@@ -101,13 +101,13 @@ function ProjectCard({ project, index }) {
 
       {/* Body */}
       <div className="p-6 pt-4">
-        <p className="dark:text-[#555] text-gray-500 text-sm leading-relaxed mb-5">
+        <p className="dark:text-[#999] text-gray-500 text-sm leading-relaxed mb-5">
           {project.description}
         </p>
 
         <ul className="space-y-1.5 mb-5">
           {project.highlights.map((h) => (
-            <li key={h} className="flex items-center gap-2 text-xs dark:text-[#555] text-gray-400">
+            <li key={h} className="flex items-center gap-2 text-xs dark:text-[#999] text-gray-400">
               <span className="w-1 h-1 rounded-full flex-shrink-0 dark:bg-[#444] bg-gray-300" />
               {h}
             </li>

@@ -71,7 +71,7 @@ export default function Contact() {
           >
             Let's connect.
           </h2>
-          <p className="dark:text-[#555] text-gray-400 max-w-xl mx-auto text-base">
+          <p className="dark:text-[#999] text-gray-500 max-w-xl mx-auto text-base">
             Whether you have a co-op opportunity, want to collaborate on a project,
             or just want to say hello — my inbox is open.
           </p>
@@ -87,7 +87,7 @@ export default function Contact() {
                   <h3 className="font-display font-700 text-xl dark:text-white text-gray-900 mb-2">
                     Message sent!
                   </h3>
-                  <p className="dark:text-[#555] text-gray-400 text-sm">
+                  <p className="dark:text-[#999] text-gray-400 text-sm">
                     Thanks for reaching out. I'll get back to you soon.
                   </p>
                   <button
