@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react'
+import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react'
 
 export default function Hero() {
   const [loaded, setLoaded] = useState(false)
@@ -132,6 +132,22 @@ export default function Hero() {
             <Mail size={16} />
             Contact Me
           </button>
+
+          <a
+            href="/resume.pdf"
+            download="Jake_LeCoure_Resume.pdf"
+            className="
+              flex items-center gap-2 px-7 py-3.5 rounded-xl
+              dark:border border dark:border-[#222] border border-gray-200
+              dark:text-[#555] text-gray-500
+              dark:hover:text-white hover:text-gray-900
+              dark:hover:border-[#444] hover:border-gray-400
+              transition-all duration-200 text-sm font-medium
+            "
+          >
+            <Download size={16} />
+            Resume
+          </a>
         </div>
 
         {/* Socials */}
