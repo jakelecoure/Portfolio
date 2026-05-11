@@ -8,7 +8,7 @@ const EXPERIENCE = [
     role: 'Engineering Student (Co-op)',
     org: 'DOF Subsea',
     location: 'St. John\'s, NL',
-    period: 'January 2025 – Present',
+    period: 'January 2026 – May 2026',
     bullets: [
       'Supported offshore operations for subsea intervention, including ROV-based repair of a drill centre system',
       'Developed and revised deck layouts and lift plans using CAD to improve operational efficiency and safety',
