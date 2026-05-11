@@ -81,11 +81,11 @@ function ProjectCard({ project, index }) {
     >
       {/* Project image */}
       {project.image && (
-        <div className="w-full h-48 overflow-hidden">
+        <div className="w-full h-48 overflow-hidden dark:bg-[#1a1a1a] bg-gray-100 flex items-center justify-center">
           <img
             src={project.image}
             alt={project.title}
-            className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+            className="w-full h-full object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300"
           />
         </div>
       )}
