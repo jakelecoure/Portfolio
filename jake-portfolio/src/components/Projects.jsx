@@ -44,7 +44,7 @@ const PROJECTS = [
       'Led the marketing display for a remotely operated underwater vehicle at MATE\'s national competition. Combined mechanical design, embedded systems, and team coordination to build a functional subsea robot.',
     tech: ['ROV Design', 'Team Leadership', 'CAD', 'Systems Integration'],
     icon: null,
-    image: '/projects/rov.jpg',
+    image: '/projects/rov.webp',
     github: null,
     demo: null,
     badge: '1st Place: Marketing Display',
