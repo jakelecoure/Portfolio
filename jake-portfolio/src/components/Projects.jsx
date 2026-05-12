@@ -27,7 +27,7 @@ const PROJECTS = [
       'Designed and built an automated irrigation system using moisture and motion sensors to optimize water usage. Programmed control logic to trigger a servo-actuated valve system based on real-time environmental inputs. Features LCD user interface and audio alert system.',
     tech: ['Arduino', 'Python', 'Sensor Integration', 'Servo Control', 'LCD Interface'],
     icon: null,
-    image: '/projects/irrigation.jpg',
+    image: '/projects/irrigation.svg',
     github: 'https://github.com/jakelecoure/smart_irrigation_system',
     demo: null,
     highlights: [
