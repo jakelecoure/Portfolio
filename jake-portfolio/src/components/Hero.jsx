@@ -89,9 +89,8 @@ export default function Hero() {
             marginBottom: '2.5rem',
           }}
         >
-          2nd-year Co-op student at Memorial University of Newfoundland, currently
-          gaining real-world experience at DOF Subsea in offshore engineering
-          operations, CAD design, and subsea systems.
+          3rd-year Co-op student at Memorial University of Newfoundland, currently
+          gaining real-world experience at GovNL in the Department of Transportation and Infrastructure.
         </p>
 
         {/* CTAs */}
