@@ -67,15 +67,14 @@ export default function About() {
           <div>
             <div className="reveal reveal-delay-1 space-y-5 dark:text-[#aaa] text-gray-500 leading-relaxed text-[15px]">
               <p>
-                I'm a 2nd-year Process Engineering student at{' '}
+                I'm a 3rd-year Process Engineering student at{' '}
                 Memorial University of Newfoundland,
                 currently on co-op with{' '}
-                DOF Subsea in St. John's, NL.
+                GovNL in St. John's, NL.
               </p>
               <p>
-                My work at DOF spans subsea intervention planning, ROV operations, CAD-based deck layout
-                design, and SIMOPS coordination for international offshore projects, giving me hands-on
-                exposure to real-world engineering in high-stakes environments.
+                My work at the Department of Transportation and Infrastructure includes supporting infrastructure planning and project delivery through technical analysis, data management, and engineering review, giving me hands-on
+                exposure to real-world engineering projects that benefit the community.
               </p>
               <p>
                 Outside the office, I'm a varsity swimmer and 6× provincial record holder, a pursuit that has shaped my discipline, resilience, and ability to perform under pressure.
