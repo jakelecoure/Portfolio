@@ -86,7 +86,7 @@ export default function About() {
             <div className="reveal reveal-delay-2 mt-10 grid grid-cols-3 gap-4">
               {[
                 { value: '6×',   label: 'Provincial Records' },
-                { value: '2nd',  label: 'Year Engineering'   },
+                { value: '3rd',  label: 'Year Engineering'   },
                 { value: '2029', label: 'Graduation (BEng)'  },
               ].map((s) => (
                 <div
